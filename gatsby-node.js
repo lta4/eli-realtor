@@ -45,6 +45,7 @@ exports.createPages = ({ graphql, actions }) => {
         path: `${markdown.node.frontmatter.path}`,
         component: blogPostTemplate,
         context: {
+            blog: markdown
           // Add optional context data to be inserted
           // as props into the page component.
           //

@@ -1,6 +1,6 @@
 ---
 title: "Welcome to my third blog post 🔨"
-author: "the class!"
+author: "Andrew!"
 date: "2020-10-06"
 path: "blog-three"
 ---
