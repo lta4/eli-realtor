@@ -1,10 +1,10 @@
-import * as React from "react";
-import Layout from "../components/layout";
-import Seo from "../components/seo";
+import * as React from "react"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 
 const About = () => (
     <Layout>
-        <Seo />
+        <Seo title="About" />
             <h1>hello from about page</h1>
     </Layout>
 )

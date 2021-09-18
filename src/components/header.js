@@ -28,6 +28,7 @@ const Header = ({ siteTitle }) => (
             <div>
               <p>
                 <Link to="/about/">About</Link>
+                <Link to="/404">404</Link>
               </p>
             </div>
         </Link>
@@ -35,6 +36,8 @@ const Header = ({ siteTitle }) => (
     </div>
   </header>
 )
+
+console.log(Link)
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
