@@ -25,6 +25,10 @@ const Header = ({ siteTitle }) => (
             <div>
               <p>
                 <Link to="/about/">About</Link>
+                <Link to="/video/">Video</Link>
+                <Link to="/list/">List</Link>
+                <Link to="/review/">Review</Link>
+                <Link to="/contact/">Contact</Link>
                 <Link to="/404/">404</Link>
               </p>
             </div>
