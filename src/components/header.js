@@ -1,7 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import About from "../pages/about"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -25,8 +24,8 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
             <div>
               <p>
-                <Link to="/about">About</Link>
-                <Link to="/404">404</Link>
+                <Link to="/about/">About</Link>
+                <Link to="/404/">404</Link>
               </p>
             </div>
         </Link>
