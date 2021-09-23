@@ -8,23 +8,23 @@ const Contact = () => (
             <h1>Get in touch with Eli'</h1>
             <form method="post" action="#">
                 <label>
-                    Name
+                Name
                     <input type="text" name="name" id="name" />
                 </label>
                 <label>
-                    Email
+                Email
                     <input type="email" name="email" id="email" />
                 </label>
                 <label>
-                    Subject
+                Subject
                     <input type="text" name="subject" id="subject" />
                 </label>
                 <label>
-                    Message
+                Message
                     <textarea name="message" id="message" rows="5" />
                 </label>
-                <button type="submit">Send</button>
-                <input type="reset" value="Clear" />
+                    <button type="submit">Send</button>
+                    <input type="reset" value="Clear" />
             </form>
     </Layout>
 )
