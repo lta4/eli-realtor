@@ -1,6 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import "./header.css"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -23,15 +24,14 @@ const Header = ({ siteTitle }) => (
           }}>
           {siteTitle}
             <div>
-              <p>
-                <Link to="/about/">About</Link>
-                <Link to="/approach/">Our Approach</Link>
-                <Link to="/video/">Videos</Link>
-                <Link to="/list/">Listings</Link>
-                <Link to="/case/">Case Studies</Link>
-                <Link to="/review/">Reviews</Link>
-                <Link to="/contact/">Contact</Link>
-                <Link to="/404/">404</Link>
+              <p className="headerLinks">
+                <Link id="aboutL" to="/about/">About</Link>
+                <Link id="approachL" to="/approach/">Our Approach</Link>
+                <Link id="videoL" to="/video/">Videos</Link>
+                <Link id="listL" to="/list/">Listings</Link>
+                <Link id="caseL" to="/case/">Case Studies</Link>
+                <Link id="reviewL" to="/review/">Reviews</Link>
+                <Link id="contactL" to="/contact/">Contact</Link>
               </p>
             </div>
         </Link>
