@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
         >
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          Gatsby by <a href="https://capstone-anxiety-app.netlify.app">Andrew Arias</a>
         </footer>
       </div>
     </>
