@@ -6,7 +6,7 @@ import "./header.css"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `black`,
+      background: `lavender`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => (
     >
       <h1 style={{ margin: 0 }}>
         <Link to="/" 
-          style={{ color: `white`,
+          style={{ color: `black`,
             textDecoration: `none`,
           }}>
           {siteTitle}

@@ -1,3 +1,11 @@
+.headerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
 #aboutL, #approachL, #videoL, #listL, #caseL, #reviewL, #contactL {
     text-decoration: none;
+    font-size: 1.2rem;
 }
