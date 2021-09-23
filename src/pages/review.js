@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 const Review = () => (
     <Layout>
         <Seo title="Review" />
-            <h1>Hello from Review</h1>
+            <h1>Reviews of Eli'</h1>
     </Layout>
 )
 

@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 const Contact = () => (
     <Layout>
         <Seo title="Contact" />
-            <h1>Hello from Contact</h1>
+            <h1>Get in touch with Eli'</h1>
     </Layout>
 )
 
