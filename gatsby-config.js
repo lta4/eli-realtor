@@ -36,6 +36,14 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "Movie",
+        fieldName: "movie",
+        url: "http://localhost:4000/graphql"
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
