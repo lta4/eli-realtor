@@ -43,7 +43,7 @@ module.exports = {
       options: {
         typeName: "Movie",
         fieldName: "movie",
-        url: "http://localhost:4000/graphql",
+        url: "https://eli-realtor-app.herokuapp.com/graphql",
         headers: {
           username: process.env.User_Name,
           password: process.env.Password,
