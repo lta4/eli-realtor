@@ -1,3 +1,6 @@
+const dotenv = require('dotenv')
+dotenv.config()
+
 module.exports = {
   siteMetadata: {
     title: `Èli Martinez A NELA Agent`,
@@ -40,7 +43,11 @@ module.exports = {
       options: {
         typeName: "Movie",
         fieldName: "movie",
-        url: "http://localhost:4000/graphql"
+        url: "http://localhost:4000/graphql",
+        headers: {
+          username: process.env.User_Name,
+          password: process.env.Password,
+        },
       },
     },
     {
