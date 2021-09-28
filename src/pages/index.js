@@ -21,6 +21,7 @@ const IndexPage = () => {
       }
     `
   )
+  console.log(movie)
   return (
     <Layout>
       <Seo title="Home" />

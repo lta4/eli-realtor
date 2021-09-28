@@ -1,5 +1,5 @@
-const dotenv = require('dotenv')
-dotenv.config()
+// const dotenv = require('dotenv')
+// dotenv.config()
 
 module.exports = {
   siteMetadata: {
@@ -43,11 +43,7 @@ module.exports = {
       options: {
         typeName: "Movie",
         fieldName: "movie",
-        url: "https://eli-realtor-app.herokuapp.com/graphql",
-        headers: {
-          username: process.env.User_Name,
-          password: process.env.Password,
-        },
+        url: "http://localhost:4000/graphql"
       },
     },
     {
