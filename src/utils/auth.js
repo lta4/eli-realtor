@@ -4,7 +4,6 @@ import { navigate } from "gatsby"
 const isBrowser = typeof window !== "undefined"
 
 const auth = isBrowser
-
     ? new auth0.WebAuth({
         domain: process.env.AUTH0_DOMAIN,
         clientID: process.env.AUTH0_CLIENTID,
@@ -57,6 +56,11 @@ const setSession = (cb = () => {}) => (err, authResult) => {
     }
 }
 
+export const silentAuth = callback => {
+    if (!isAuthenticated()) return callback()
+    auth.checkSession({}, setSession(callback))
+}
+
 export const handleAuthentication = () => {
     if (!isBrowser) {
         return;
@@ -69,4 +73,7 @@ export const getProfile = () => {
     return user
 }
 
-
+export const logout = () => {
+    localStorage.setItem("isLoggedIn", false)
+    auth.logout()
+}
