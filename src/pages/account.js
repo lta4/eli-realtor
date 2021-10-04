@@ -17,16 +17,8 @@ import Review from "./review"
 const Home = ({ user }) => {
     return <p>Hi, {user.name ? user.name : "friend"}!</p>
 }
-// const Settings = () => <p>Settings</p>
-// const Billing = () => <p>Billing</p>
-// const About = () => <p>About</p>
-// const Approach = () => <p>Approach</p>
-// const Video = () => <p>Video</p>
 const Callback = () => <p>Callback</p>
-// const Case = () => <p>Case</p>
-// const Contact = () => <p>Contact</p>
-// const List = () => <p>List</p>
-// const Review = () => <p>Review</p>
+
 
 const Account = () => {
 
@@ -57,6 +49,7 @@ const Account = () => {
       <Seo title="Home" />
       <nav>
         <p className="headerLinks">
+        {/* <Link to="/account">Home</Link>{" "} */}
         <Link id="aboutL" to="/account/about">About</Link>{" "}
         <Link id="approachL" to="/account/approach/">Our Approach</Link>{" "}
         <Link id="videoL" to="/account/video/">Videos</Link>{" "}
@@ -67,6 +60,7 @@ const Account = () => {
         </p>
       </nav>
       <Router>
+          {/* <Home path="/account" /> */}
           <About path="/account/about" />
           <Approach path="/account/approach" />
           <Video path="/account/video" />
