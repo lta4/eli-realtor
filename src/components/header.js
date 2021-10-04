@@ -23,7 +23,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}>
           {siteTitle}
-            <div>
+            {/* <div>
               <p className="headerLinks">
                 <Link id="aboutL" to="/about/">About</Link>
                 <Link id="approachL" to="/approach/">Our Approach</Link>
@@ -33,7 +33,7 @@ const Header = ({ siteTitle }) => (
                 <Link id="reviewL" to="/review/">Reviews</Link>
                 <Link id="contactL" to="/contact/">Contact</Link>
               </p>
-            </div>
+            </div> */}
         </Link>
       </h1>
     </div>
