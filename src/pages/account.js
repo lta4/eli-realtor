@@ -50,7 +50,7 @@ const Account = () => {
       <Seo title="Home" />
       <nav>
         <p className="headerLinks">
-        <Link id="aboutL" to="/account/about/">About</Link>{" "}
+        <Link id="aboutL" to="/account/about">About</Link>{" "}
         <Link id="approachL" to="/account/approach/">Our Approach</Link>{" "}
         <Link id="videoL" to="/account/video/">Videos</Link>{" "}
         <Link id="listL" to="/account/list/">Listings</Link>{" "}
