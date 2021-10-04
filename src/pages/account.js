@@ -6,20 +6,27 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "../components/header.css"
+import About from "./about"
+import Approach from "./approach"
+import Video from "./video"
+import Case from "./case"
+import Contact from "./contact"
+import List from "./list"
+import Review from "./review"
 
 const Home = ({ user }) => {
     return <p>Hi, {user.name ? user.name : "friend"}!</p>
 }
-const Settings = () => <p>Settings</p>
-const Billing = () => <p>Billing</p>
-const About = () => <p>About</p>
-const Approach = () => <p>Approach</p>
-const Video = () => <p>Video</p>
+// const Settings = () => <p>Settings</p>
+// const Billing = () => <p>Billing</p>
+// const About = () => <p>About</p>
+// const Approach = () => <p>Approach</p>
+// const Video = () => <p>Video</p>
 const Callback = () => <p>Callback</p>
-const Case = () => <p>Case</p>
-const Contact = () => <p>Contact</p>
-const List = () => <p>List</p>
-const Review = () => <p>Review</p>
+// const Case = () => <p>Case</p>
+// const Contact = () => <p>Contact</p>
+// const List = () => <p>List</p>
+// const Review = () => <p>Review</p>
 
 const Account = () => {
 
