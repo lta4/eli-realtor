@@ -9,6 +9,7 @@ import * as React from "react"
 const IndexPage = () => {
   return (
     <h1>this is the index page</h1>
+    
   )
 
   // const { movie } = useStaticQuery (
