@@ -5,7 +5,6 @@ import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { useStaticQuery, graphql } from "gatsby"
-import Header from "../components/header.css"
 import About from "./about"
 import Approach from "./approach"
 import Video from "./video"
@@ -49,8 +48,7 @@ const Account = () => {
       <Seo title="Home" />
       <nav>
         <p className="headerLinks">
-        {/* <Link to="/account">Home</Link>{" "} */}
-        <Link id="aboutL" to="/account/about">About</Link>{" "}
+        <Link id="aboutL" to="/account/about/">About</Link>{" "}
         <Link id="approachL" to="/account/approach/">Our Approach</Link>{" "}
         <Link id="videoL" to="/account/video/">Videos</Link>{" "}
         <Link id="listL" to="/account/list/">Listings</Link>{" "}
@@ -60,7 +58,6 @@ const Account = () => {
         </p>
       </nav>
       <Router>
-          {/* <Home path="/account" /> */}
           <About path="/account/about" />
           <Approach path="/account/approach" />
           <Video path="/account/video" />
@@ -70,11 +67,11 @@ const Account = () => {
           <List path="/account/list" />
           <Review path="/account/review" />
       </Router>
-      <h1>Hi, {user.name ? user.name : "friend"} ! Or should I say, potential new homeowner.</h1>
+      {/* <h1>Hi, {user.name ? user.name : "friend"} ! Or should I say, potential new homeowner.</h1> */}
       <p>Welcome to Eli's page.</p>
       <ul>
-        {movie.movieList.map(mov => (
-          <li>
+        {movie.movieList.map((mov, id) => (
+          <li key={id}>
             <div>{mov.title}({mov.year})</div>
             <div className="rate-row">
                 {/* <StarIcon /> */}
@@ -89,30 +86,7 @@ const Account = () => {
         <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
       </p>
     </Layout>
-    
   )
-
-    // return (
-    //     <>
-    //         <nav>
-    //             <Link to="/account/">Home</Link>{" "}
-    //             <Link to="/account/settings/">Settings</Link>{" "}
-    //             <Link to="/account/billing/">Billing</Link>{" "}
-    //             <a href="#logout" onClick={e => {
-    //                 logout() 
-    //                 e.preventDefault()
-    //             }}
-    //             >
-    //                 Log Out
-    //             </a>
-    //         </nav>
-    //         <Router>
-    //             <Home path="/account/" user={user} />
-    //             <Settings path="/account/settings" />
-    //             <Billing path="/account/billing" />
-    //         </Router>
-    //     </>
-    // )
 }
 
 export default Account
