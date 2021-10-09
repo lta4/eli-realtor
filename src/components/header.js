@@ -23,17 +23,25 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}>
           {siteTitle}
-            {/* <div>
-              <p className="headerLinks">
-                <Link id="aboutL" to="/about/">About</Link>
-                <Link id="approachL" to="/approach/">Our Approach</Link>
-                <Link id="videoL" to="/video/">Videos</Link>
-                <Link id="listL" to="/list/">Listings</Link>
-                <Link id="caseL" to="/case/">Case Studies</Link>
-                <Link id="reviewL" to="/review/">Reviews</Link>
-                <Link id="contactL" to="/contact/">Contact</Link>
-              </p>
-            </div> */}
+          <nav>
+            <p className="headerLinks">
+            <Link id="aboutL" to="/account/about/">About</Link>{" "}
+            <Link id="approachL" to="/account/approach/">Our Approach</Link>{" "}
+            <Link id="videoL" to="/account/video/">Videos</Link>{" "}
+            <Link id="listL" to="/account/list/">Listings</Link>{" "}
+            <Link id="caseL" to="/account/case/">Case Studies</Link>{" "}
+            <Link id="reviewL" to="/account/review/">Reviews</Link>{" "}
+            <Link id="contactL" to="/account/contact/">Contact</Link>{" "}
+            {/* <a href="#logout"
+            onClick={e => {
+              logout()
+              e.preventDefault()
+            }}
+            >
+              Log Out
+            </a> */}
+            </p>
+          </nav>
         </Link>
       </h1>
     </div>

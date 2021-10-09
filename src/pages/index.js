@@ -1,62 +1,30 @@
 import * as React from "react"
-// import { Link } from "gatsby"
-// import { StaticImage } from "gatsby-plugin-image"
-// import Layout from "../components/layout"
-// import Seo from "../components/seo"
-// import { useStaticQuery, graphql } from "gatsby"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+import { Router } from "@reach/router"
+import About from "../pages/about"
+import Approach from "../pages/approach"
+import Video from "../pages/video"
+import Case from "../pages/case"
+import Contact from "../pages/contact"
+import List from "../pages/list"
+import Review from "../pages/review"
 // import StarIcon from "../Icons/starIcon"
 
-const IndexPage = () => {
-  return (
-    <h1>this is the index page</h1>
+const IndexPage = (props) => (
+    <Layout>
+      <Seo title="Index"/>
+      <Router>
+          <About path="/account/about" pages={About} />
+          <Approach path="/account/approach" pages={Approach} />
+          <Video path="/account/video" pages={Video} />
+          <Case path="/account/case" pages={Case} />
+          <Contact path="/account/contact" pages={Contact} />
+          <List path="/account/list" pages={List} />
+          <Review path="/account/review" pages={Review} />
+      </Router>
+    </Layout>
     
   )
-
-  // const { movie } = useStaticQuery (
-  //   graphql`
-  //     query MyQuery {
-  //       movie {
-  //         movieList {
-  //           title
-  //           rate
-  //           year
-  //         }
-  //       }
-  //     }
-  //   `
-  // )
-  // console.log(movie)
-  // return (
-  //   <Layout>
-  //     <Seo title="Home" />
-  //     <h1>Hello potential new home owners</h1>
-  //     <p>Welcome to Eli's page.</p>
-  //     <ul>
-  //       {movie.movieList.map(mov => (
-  //         <li>
-  //           <div>{mov.title}({mov.year})</div>
-  //           <div className="rate-row">
-  //               {/* <StarIcon /> */}
-  //             <span className="rate-text">{mov.rate}</span>
-  //           </div>
-  //         </li>
-  //       ))}
-  //     </ul>
-  //     {/* <StaticImage
-  //       src="../images/gatsby-astronaut.png"
-  //       width={300}
-  //       quality={95}
-  //       formats={["auto", "webp", "avif"]}
-  //       alt="A Gatsby astronaut"
-  //       style={{ marginBottom: `1.45rem` }}
-  //     /> */}
-  //     <p>
-  //       <Link to="/account">Go to your account</Link>
-  //       <Link to="/page-2/">Go to page 2</Link> <br />
-  //       <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  //     </p>
-  //   </Layout>
-  // )
-}
 
 export default IndexPage
