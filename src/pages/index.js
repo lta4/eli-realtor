@@ -11,11 +11,11 @@ import List from "../pages/list"
 import Review from "../pages/review"
 // import StarIcon from "../Icons/starIcon"
 
-const IndexPage = (props) => (
+const IndexPage = () => (
     <Layout>
       <Seo title="Index"/>
       <Router>
-          <About path="/account/about" pages={About} />
+          <About path="/account/about" component={About} />
           <Approach path="/account/approach" pages={Approach} />
           <Video path="/account/video" pages={Video} />
           <Case path="/account/case" pages={Case} />
