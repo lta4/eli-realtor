@@ -14,8 +14,7 @@ import Review from "../pages/review"
 import Contact from "../pages/contact"
 import Home from "../pages/home"
 
-// const Account = ({ siteTitle }) => {
-const Account = () => {
+const Account = ({ siteTitle }) => {
   if (!isAuthenticated()) {
     login()
     return <p>Redirecting to login...</p>
@@ -25,7 +24,7 @@ const Account = () => {
 
   return (
     // <Layout>
-    <>
+      <>
       <Seo title="Home" />
       <nav>
             <Link to="/account/">Home</Link>{" "}
@@ -36,6 +35,13 @@ const Account = () => {
             <Link id="caseL" to="/account/case/">Case Studies</Link>{" "}
             <Link id="reviewL" to="/account/review/">Reviews</Link>{" "}
             <Link id="contactL" to="/account/contact/">Contact</Link>{" "}
+            <a href ="#logout" onClick={e => {
+              logout() 
+              e.preventDefault()
+            }}
+          >
+            Log Out
+          </a>
       </nav>
       {/* <h1>Hi, {user.name ? user.name : "friend"}! Or should I say, potential new homeowner.</h1>
       <p>Welcome to Eli's page.</p> */}
