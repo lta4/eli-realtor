@@ -5,7 +5,7 @@
     margin-top: 15px;
 }
 
-#aboutL, #approachL, #videoL, #listL, #caseL, #reviewL, #contactL {
+#homeL, #aboutL, #approachL, #videoL, #listL, #caseL, #reviewL, #contactL, #logout {
     text-decoration: none;
     font-size: 1.2rem;
 }
