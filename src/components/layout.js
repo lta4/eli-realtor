@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.css"
 import "./header.css"
 
@@ -40,6 +41,7 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
+          <Footer />
           © {new Date().getFullYear()}, Built with
           {` `}
           Gatsby by <a href="https://capstone-anxiety-app.netlify.app">Andrew Arias</a>
