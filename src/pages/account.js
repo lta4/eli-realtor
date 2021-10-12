@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
 // import Layout from "../components/layout"
 import Seo from "../components/seo"
-import "../components/header.css"
+// import "../components/header.css"
 import About from "../pages/about"
 import Approach from "../pages/approach"
 import Video from "../pages/video"
@@ -25,7 +25,7 @@ const Account = ({ siteTitle }) => {
   return (
       <>
         <Seo title="Home" />
-        <nav>
+        <nav className="navLinks">
               <Link id="homeL" to="/account/">Home</Link>{" "}
               <Link id="aboutL" to="/account/about/">About</Link>{" "}
               <Link id="approachL" to="/account/approach/">Our Approach</Link>{" "}
